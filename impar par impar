@@ -1,0 +1,18 @@
+bool x = false;
+int cont = 0;
+int incremento = 1;
+bool par;
+void setup() {
+  // put your setup code here, to run once:
+Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+cont+=incremento;
+if(cont%2!=0 == par){Serial.println(cont);}
+if(cont>=9){incremento = -1}
+
+}
